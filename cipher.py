@@ -13,12 +13,12 @@ for char in message:
     new_char = int_val
     if int_val >= lowerr_a_val and int_val < lowerr_a_val+26:
         new_char = ord(char) + int(key) 
-        if new_char> lowerr_a_val+26:
+        if new_char>= lowerr_a_val+26:
             new_char = new_char - 26
         print(char, ord(char), new_char, chr(new_char))
     if int_val >= upper_a_val and int_val < upper_a_val+26:
         new_char = ord(char) + int(key)
-        if new_char> upper_a_val+26:
+        if new_char>= upper_a_val+26:
             new_char = new_char - 26
         print(char, ord(char), new_char, chr(new_char))
     letters.append(chr(new_char))
